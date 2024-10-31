@@ -62,7 +62,7 @@ android {
 
     defaultConfig {
         // TODO If this is ever modified, change application_id in strings.xml
-        applicationId = "io.github.lime3ds.android"
+        applicationId = "vn.duclq.lime3ds.cube.android"
         minSdk = 28
         targetSdk = 35
         versionCode = autoVersion
