@@ -6,8 +6,10 @@ package io.github.lime3ds.android.features.settings.ui
 
 import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.net.Uri
 import android.os.Bundle
+import android.view.KeyEvent
 import android.view.View
 import android.view.ViewGroup.MarginLayoutParams
 import android.widget.Toast
@@ -25,6 +27,7 @@ import io.github.lime3ds.android.LimeApplication
 import io.github.lime3ds.android.NativeLibrary
 import io.github.lime3ds.android.R
 import io.github.lime3ds.android.databinding.ActivitySettingsBinding
+import io.github.lime3ds.android.features.settings.model.AbstractStringSetting
 import java.io.IOException
 import io.github.lime3ds.android.features.settings.model.BooleanSetting
 import io.github.lime3ds.android.features.settings.model.FloatSetting
@@ -33,6 +36,7 @@ import io.github.lime3ds.android.features.settings.model.ScaledFloatSetting
 import io.github.lime3ds.android.features.settings.model.Settings
 import io.github.lime3ds.android.features.settings.model.SettingsViewModel
 import io.github.lime3ds.android.features.settings.model.StringSetting
+import io.github.lime3ds.android.features.settings.model.view.InputBindingSetting
 import io.github.lime3ds.android.features.settings.utils.SettingsFile
 import io.github.lime3ds.android.utils.SystemSaveGame
 import io.github.lime3ds.android.utils.DirectoryInitialization
@@ -221,13 +225,16 @@ class SettingsActivity : AppCompatActivity(), SettingsActivityView {
 
         // Set default values for system config file
         SystemSaveGame.apply {
-            setUsername("LIME3DS")
-            setBirthday(3, 4)
+            setUsername("LIME3DS C")
+            setBirthday(12, 1)
             setSystemLanguage(1)
             setSoundOutputMode(1)
             setCountryCode(49)
             setPlayCoins(300)
         }
+
+        // Set default key map
+        setUpDefaultSettingKeys()
 
         showToastMessage(getString(R.string.settings_reset), true)
         finish()
@@ -287,6 +294,159 @@ class SettingsActivity : AppCompatActivity(), SettingsActivityView {
             settings.putExtra(ARG_MENU_TAG, menuTag)
             settings.putExtra(ARG_GAME_ID, gameId)
             launcher.launch(settings)
+        }
+    }
+
+    //////////////////////////////////// Default Keymap Setting ///////////////////////////////
+    private lateinit var preferences: SharedPreferences
+    fun setUpDefaultSettingKeys() {
+        preferences = PreferenceManager.getDefaultSharedPreferences(LimeApplication.appContext)
+        Settings.buttonKeys.forEachIndexed { i: Int, key: String ->
+            val button = getInputObject(key)
+            val itemInputBindingSetting = InputBindingSetting(button, Settings.buttonTitles[i])
+            when (key) {
+                Settings.KEY_BUTTON_A -> itemInputBindingSetting.onKeyInput(
+                    KeyEvent(
+                        KeyEvent.ACTION_UP,
+                        96
+                    )
+                )
+
+                Settings.KEY_BUTTON_B -> itemInputBindingSetting.onKeyInput(
+                    KeyEvent(
+                        KeyEvent.ACTION_UP,
+                        97
+                    )
+                )
+
+                Settings.KEY_BUTTON_X -> itemInputBindingSetting.onKeyInput(
+                    KeyEvent(
+                        KeyEvent.ACTION_UP,
+                        99
+                    )
+                )
+
+                Settings.KEY_BUTTON_Y -> itemInputBindingSetting.onKeyInput(
+                    KeyEvent(
+                        KeyEvent.ACTION_UP,
+                        100
+                    )
+                )
+
+                Settings.KEY_BUTTON_SELECT -> itemInputBindingSetting.onKeyInput(
+                    KeyEvent(
+                        KeyEvent.ACTION_UP,
+                        109
+                    )
+                )
+
+                Settings.KEY_BUTTON_START -> itemInputBindingSetting.onKeyInput(
+                    KeyEvent(
+                        KeyEvent.ACTION_UP,
+                        108
+                    )
+                )
+
+                Settings.KEY_BUTTON_HOME -> itemInputBindingSetting.onKeyInput(
+                    KeyEvent(
+                        KeyEvent.ACTION_UP,
+                        106
+                    )
+                ) // L3
+            }
+        }
+
+        Settings.circlePadKeys.forEachIndexed { i: Int, key: String ->
+            val button = getInputObject(key)
+            val itemInputBindingSetting = InputBindingSetting(button, Settings.buttonTitles[i])
+            when (key) {
+                Settings.KEY_CIRCLEPAD_AXIS_VERTICAL -> itemInputBindingSetting.onMotionInputCube(
+                    "retrogame_joypad", 1
+                )
+
+                Settings.KEY_CIRCLEPAD_AXIS_HORIZONTAL -> itemInputBindingSetting.onMotionInputCube(
+                    "retrogame_joypad", 0
+                )
+            }
+        }
+
+        Settings.cStickKeys.forEachIndexed { i: Int, key: String ->
+            val button = getInputObject(key)
+            val itemInputBindingSetting = InputBindingSetting(button, Settings.buttonTitles[i])
+            when (key) {
+                Settings.KEY_CSTICK_AXIS_VERTICAL -> itemInputBindingSetting.onMotionInputCube(
+                    "retrogame_joypad", 14
+                )
+
+                Settings.KEY_CSTICK_AXIS_HORIZONTAL -> itemInputBindingSetting.onMotionInputCube(
+                    "retrogame_joypad", 11
+                )
+            }
+        }
+
+        Settings.dPadAxisKeys.forEachIndexed { i: Int, key: String ->
+            val button = getInputObject(key)
+            val itemInputBindingSetting = InputBindingSetting(button, Settings.buttonTitles[i])
+            when (key) {
+                Settings.KEY_DPAD_AXIS_VERTICAL -> itemInputBindingSetting.onMotionInputCube(
+                    "retrogame_joypad", 16
+                )
+
+                Settings.KEY_DPAD_AXIS_HORIZONTAL -> itemInputBindingSetting.onMotionInputCube(
+                    "retrogame_joypad", 15
+                )
+            }
+        }
+
+        Settings.triggerKeys.forEachIndexed { i: Int, key: String ->
+            val button = getInputObject(key)
+            val itemInputBindingSetting = InputBindingSetting(button, Settings.buttonTitles[i])
+            when (key) {
+                Settings.KEY_BUTTON_L -> itemInputBindingSetting.onKeyInput(
+                    KeyEvent(
+                        KeyEvent.ACTION_UP,
+                        102
+                    )
+                )
+
+                Settings.KEY_BUTTON_R -> itemInputBindingSetting.onKeyInput(
+                    KeyEvent(
+                        KeyEvent.ACTION_UP,
+                        103
+                    )
+                )
+
+                Settings.KEY_BUTTON_ZL -> itemInputBindingSetting.onKeyInput(
+                    KeyEvent(
+                        KeyEvent.ACTION_UP,
+                        104
+                    )
+                )
+
+                Settings.KEY_BUTTON_ZR -> itemInputBindingSetting.onKeyInput(
+                    KeyEvent(
+                        KeyEvent.ACTION_UP,
+                        105
+                    )
+                )
+            }
+        }
+    }
+
+    private fun getInputObject(key: String): AbstractStringSetting {
+        return object : AbstractStringSetting {
+            override var string: String
+                get() = preferences.getString(key, "")!!
+                set(value) {
+                    preferences.edit()
+                        .putString(key, value)
+                        .apply()
+                }
+            override val key = key
+            override val section = Settings.SECTION_CONTROLS
+            override val isRuntimeEditable = true
+            override val valueAsString = preferences.getString(key, "")!!
+            override val defaultValue = ""
         }
     }
 }

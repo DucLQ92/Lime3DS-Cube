@@ -28,6 +28,7 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:defaultFocusHighlightEnabled="false"
+            android:background="@drawable/bg_cube"
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:visibility="invisible" />

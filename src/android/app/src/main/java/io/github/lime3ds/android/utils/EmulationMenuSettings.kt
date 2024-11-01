@@ -49,7 +49,7 @@ object EmulationMenuSettings {
                 .apply()
         }
     var showOverlay: Boolean
-        get() = preferences.getBoolean("EmulationMenuSettings_ShowOverlay", true)
+        get() = preferences.getBoolean("EmulationMenuSettings_ShowOverlay", false)
         set(value) {
             preferences.edit()
                 .putBoolean("EmulationMenuSettings_ShowOverlay", value)

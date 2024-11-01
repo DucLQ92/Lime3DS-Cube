@@ -34,6 +34,7 @@ import androidx.work.OutOfQuotaPolicy
 import androidx.work.WorkManager
 import com.google.android.material.color.MaterialColors
 import com.google.android.material.navigation.NavigationBarView
+import io.github.lime3ds.android.LimeApplication
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 import io.github.lime3ds.android.R
@@ -70,6 +71,8 @@ class MainActivity : AppCompatActivity(), ThemeProvider {
             !DirectoryInitialization.areLime3DSDirectoriesReady() &&
                     PermissionsHandler.hasWriteAccess(this)
         }
+
+        setUpDefaultSetting1stBoot()
 
         if (PermissionsHandler.hasWriteAccess(applicationContext) &&
             DirectoryInitialization.areLime3DSDirectoriesReady()) {
@@ -336,5 +339,15 @@ class MainActivity : AppCompatActivity(), ThemeProvider {
                 .setExpedited(OutOfQuotaPolicy.RUN_AS_NON_EXPEDITED_WORK_REQUEST)
                 .build()
         )
+    }
+
+    //////////////////////////////////// Default Keymap Setting ///////////////////////////////
+    private fun setUpDefaultSetting1stBoot() {
+        val preferences = PreferenceManager.getDefaultSharedPreferences(LimeApplication.appContext)
+        if (preferences.getString("first_boot", "0") == "0") {
+            preferences.edit().putString("first_boot", "1").apply()
+            val settingsActivity = SettingsActivity()
+            settingsActivity.setUpDefaultSettingKeys()
+        }
     }
 }

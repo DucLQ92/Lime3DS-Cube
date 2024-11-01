@@ -12,20 +12,20 @@
     </integer-array>
 
     <string-array name="landscapeLayouts">
-        <item>@string/emulation_screen_layout_largescreen</item>
-        <item>@string/emulation_screen_layout_single</item>
-        <item>@string/emulation_screen_layout_sidebyside</item>
-        <item>@string/emulation_screen_layout_hybrid</item>
-        <item>@string/emulation_screen_layout_original</item>
+<!--        <item>@string/emulation_screen_layout_largescreen</item>-->
+<!--        <item>@string/emulation_screen_layout_single</item>-->
+<!--        <item>@string/emulation_screen_layout_sidebyside</item>-->
+<!--        <item>@string/emulation_screen_layout_hybrid</item>-->
+<!--        <item>@string/emulation_screen_layout_original</item>-->
         <item>@string/emulation_screen_layout_custom</item>
     </string-array>
     <!-- start with 2 because that is the Large Screen layout in cpp files -->
     <integer-array name="landscapeLayoutValues">
-        <item>2</item>
-        <item>1</item>
-        <item>3</item>
-        <item>4</item>
-        <item>0</item>
+<!--        <item>2</item>-->
+<!--        <item>1</item>-->
+<!--        <item>3</item>-->
+<!--        <item>4</item>-->
+<!--        <item>0</item>-->
         <item>5</item>
     </integer-array>
 
@@ -40,24 +40,24 @@
     </integer-array>
 
     <string-array name="smallScreenPositions">
-        <item>@string/small_screen_position_top_right</item>
-        <item>@string/small_screen_position_middle_right</item>
-        <item>@string/small_screen_position_bottom_right</item>
-        <item>@string/small_screen_position_top_left</item>
-        <item>@string/small_screen_position_middle_left</item>
-        <item>@string/small_screen_position_bottom_left</item>
-        <item>@string/small_screen_position_above</item>
+<!--        <item>@string/small_screen_position_top_right</item>-->
+<!--        <item>@string/small_screen_position_middle_right</item>-->
+<!--        <item>@string/small_screen_position_bottom_right</item>-->
+<!--        <item>@string/small_screen_position_top_left</item>-->
+<!--        <item>@string/small_screen_position_middle_left</item>-->
+<!--        <item>@string/small_screen_position_bottom_left</item>-->
+<!--        <item>@string/small_screen_position_above</item>-->
         <item>@string/small_screen_position_below</item>
     </string-array>
 
     <integer-array name="smallScreenPositionValues">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
+<!--        <item>0</item>-->
+<!--        <item>1</item>-->
+<!--        <item>2</item>-->
+<!--        <item>3</item>-->
+<!--        <item>4</item>-->
+<!--        <item>5</item>-->
+<!--        <item>6</item>-->
         <item>7</item>
     </integer-array>
 
@@ -566,18 +566,18 @@
     </integer-array>
 
     <string-array name="screenOrientations">
-        <item>@string/layout_screen_orientation_auto_sensor</item>
+<!--        <item>@string/layout_screen_orientation_auto_sensor</item>-->
         <item>@string/layout_screen_orientation_landscape</item>
-        <item>@string/layout_screen_orientation_landscape_reverse</item>
-        <item>@string/layout_screen_orientation_portrait</item>
-        <item>@string/layout_screen_orientation_portrait_reverse</item>
+<!--        <item>@string/layout_screen_orientation_landscape_reverse</item>-->
+<!--        <item>@string/layout_screen_orientation_portrait</item>-->
+<!--        <item>@string/layout_screen_orientation_portrait_reverse</item>-->
     </string-array>
     <integer-array name="screenOrientationValues">
-        <item>2</item>
+<!--        <item>2</item>-->
         <item>0</item>
-        <item>8</item>
-        <item>1</item>
-        <item>9</item>
+<!--        <item>8</item>-->
+<!--        <item>1</item>-->
+<!--        <item>9</item>-->
     </integer-array>
 
 </resources>

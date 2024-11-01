@@ -219,7 +219,7 @@ custom_bottom_height =
 # 8: Landscape (Flipped)
 # 1: Portrait
 # 9: Portrait (Flipped)
-screen_orientation =
+screen_orientation = 0
 
 # Layout for the portrait mode
 # 0 (default): Top and bottom screens at top, full width

@@ -9,7 +9,7 @@ enum class StringSetting(
     override val section: String,
     override val defaultValue: String
 ) : AbstractStringSetting {
-    INIT_TIME("init_time", Settings.SECTION_SYSTEM, "946731601"),
+    INIT_TIME("init_time", Settings.SECTION_SYSTEM, "1730390801"),
     CAMERA_INNER_NAME("camera_inner_name", Settings.SECTION_CAMERA, "ndk"),
     CAMERA_INNER_CONFIG("camera_inner_config", Settings.SECTION_CAMERA, "_front"),
     CAMERA_OUTER_LEFT_NAME("camera_outer_left_name", Settings.SECTION_CAMERA, "ndk"),

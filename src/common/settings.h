@@ -496,21 +496,21 @@ struct Values {
     SwitchableSetting<TextureFilter> texture_filter{TextureFilter::NoFilter, "texture_filter"};
     SwitchableSetting<TextureSampling> texture_sampling{TextureSampling::GameControlled,
                                                         "texture_sampling"};
-    SwitchableSetting<LayoutOption> layout_option{LayoutOption::Default, "layout_option"};
+    SwitchableSetting<LayoutOption> layout_option{LayoutOption::CustomLayout, "layout_option"};
     SwitchableSetting<bool> swap_screen{false, "swap_screen"};
     SwitchableSetting<bool> upright_screen{false, "upright_screen"};
     SwitchableSetting<float, true> large_screen_proportion{4.f, 1.f, 16.f,
                                                            "large_screen_proportion"};
-    SwitchableSetting<SmallScreenPosition> small_screen_position{SmallScreenPosition::BottomRight,
+    SwitchableSetting<SmallScreenPosition> small_screen_position{SmallScreenPosition::BelowLarge,
                                                                  "small_screen_position"};
-    Setting<u16> custom_top_x{0, "custom_top_x"};
-    Setting<u16> custom_top_y{0, "custom_top_y"};
-    Setting<u16> custom_top_width{800, "custom_top_width"};
-    Setting<u16> custom_top_height{480, "custom_top_height"};
-    Setting<u16> custom_bottom_x{80, "custom_bottom_x"};
-    Setting<u16> custom_bottom_y{500, "custom_bottom_y"};
-    Setting<u16> custom_bottom_width{640, "custom_bottom_width"};
-    Setting<u16> custom_bottom_height{480, "custom_bottom_height"};
+    Setting<u16> custom_top_x{7, "custom_top_x"};
+    Setting<u16> custom_top_y{7, "custom_top_y"};
+    Setting<u16> custom_top_width{705, "custom_top_width"};
+    Setting<u16> custom_top_height{423, "custom_top_height"};
+    Setting<u16> custom_bottom_x{172, "custom_bottom_x"};
+    Setting<u16> custom_bottom_y{438, "custom_bottom_y"};
+    Setting<u16> custom_bottom_width{375, "custom_bottom_width"};
+    Setting<u16> custom_bottom_height{281, "custom_bottom_height"};
     Setting<u16> custom_second_layer_opacity{100, "custom_second_layer_opacity"};
 
     SwitchableSetting<bool> screen_top_stretch{false, "screen_top_stretch"};

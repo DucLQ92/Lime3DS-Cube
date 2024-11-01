@@ -25,12 +25,14 @@
     <item
         android:id="@+id/menu_landscape_screen_layout"
         android:icon="@drawable/ic_fit_screen"
-        android:title="@string/emulation_switch_screen_layout" />
+        android:title="@string/emulation_switch_screen_layout"
+        android:visible="false" />
 
     <item
         android:id="@+id/menu_portrait_screen_layout"
         android:icon="@drawable/ic_portrait_fit_screen"
-        android:title="@string/emulation_switch_portrait_layout" />
+        android:title="@string/emulation_switch_portrait_layout"
+        android:visible="false" />
 
     <item
         android:id="@+id/menu_swap_screens"

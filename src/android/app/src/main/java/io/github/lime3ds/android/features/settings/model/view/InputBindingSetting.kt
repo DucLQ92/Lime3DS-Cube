@@ -253,6 +253,26 @@ class InputBindingSetting(
         value = uiString
     }
 
+    ///////////////////// CUBE /////////////////////
+    fun onMotionInputCube(deviceName: String, motionRangeAxis: Int) {
+        if (!isAxisMappingSupported()) {
+            Toast.makeText(context, R.string.input_message_button_only, Toast.LENGTH_LONG).show()
+            return
+        }
+        val button = if (isCirclePad()) {
+            NativeLibrary.ButtonType.STICK_LEFT
+        } else if (isCStick()) {
+            NativeLibrary.ButtonType.STICK_C
+        } else if (isDPad()) {
+            NativeLibrary.ButtonType.DPAD
+        } else {
+            buttonCode
+        }
+        writeAxisMapping(motionRangeAxis, button)
+        val uiString = "$deviceName: Axis $motionRangeAxis"
+        value = uiString
+    }
+
     override val type = TYPE_INPUT_BINDING
 
     companion object {
