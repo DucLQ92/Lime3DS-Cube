@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- General application strings -->
+    <string name="app_name" translatable="false">Lime3DS Cube</string>
+    <string name="app_disclaimer">Phần mềm này sẽ chạy các trò chơi cho máy chơi game cầm tay Nintendo 3DS. Không bao gồm bất kỳ trò chơi nào.\n\nTrước khi bắt đầu mô phỏng, vui lòng chọn một thư mục để lưu trữ dữ liệu người dùng của Lime3DS.\n\nThông tin thêm:\n<a href='https://web.archive.org/web/20240304193549/https://github.com/citra-emu/citra/wiki/Citra-Android-user-data-and-storage'>Wiki - Dữ liệu và lưu trữ của Lime3DS Android</a></string>
+    <string name="app_notification_channel_name" translatable="false">Lime3DS</string>
+    <string name="app_notification_channel_id" translatable="false">Lime3DS</string>
+    <string name="app_notification_channel_description">Thông báo của trình giả lập Lime3DS</string>
+    <string name="app_notification_running">Lime3DS đang chạy</string>
+    <string name="app_game_install_description">Tiếp theo, bạn cần chọn một Thư Mục Trò Chơi. Lime3DS sẽ hiển thị tất cả ROM 3DS trong thư mục đã chọn trong ứng dụng.\n\nROM CIA, cập nhật và DLC sẽ cần được cài đặt riêng bằng cách nhấp vào biểu tượng thư mục và chọn Cài Đặt CIA.</string>
+
+    <!-- Home Strings -->
+    <string name="grid_menu_core_settings">Cài Đặt</string>
+    <string name="home_options">Tùy Chọn</string>
+    <string name="home_search">Tìm Kiếm</string>
+    <string name="home_games">Trò Chơi</string>
+    <string name="settings_description">Cấu hình cài đặt trình giả lập</string>
+    <string name="install_game_content">Cài Đặt Tệp CIA</string>
+    <string name="install_game_content_description">Cài đặt trò chơi, cập nhật hoặc DLC</string>
+    <string name="share_log">Chia Sẻ Nhật Ký</string>
+    <string name="share_log_description">Chia sẻ tệp nhật ký của Lime3DS để gỡ lỗi</string>
+    <string name="gpu_driver_manager">Quản Lý Driver GPU</string>
+    <string name="install_gpu_driver">Cài Đặt Driver GPU</string>
+    <string name="install_gpu_driver_description">Cài đặt driver thay thế để có thể cải thiện hiệu suất hoặc độ chính xác</string>
+    <string name="driver_already_installed">Driver đã được cài đặt</string>
+    <string name="custom_driver_not_supported">Driver tùy chỉnh không được hỗ trợ</string>
+    <string name="custom_driver_not_supported_description">Tải driver tùy chỉnh hiện không được hỗ trợ cho thiết bị này.\nKiểm tra lại tùy chọn này trong tương lai để xem có được hỗ trợ hay không!</string>
+    <string name="share_log_not_found">Không tìm thấy tệp nhật ký</string>
+    <string name="select_games_folder">Chọn Thư Mục Trò Chơi</string>
+    <string name="select_games_folder_description">Cho phép Lime3DS truy cập vào danh sách trò chơi</string>
+    <string name="about">Giới Thiệu</string>
+    <string name="about_description">Phiên bản, người đóng góp, và nhiều hơn nữa</string>
+    <string name="games_dir_selected">Đã chọn thư mục trò chơi</string>
+    <string name="select_lime3ds_user_folder_home_description">Thay đổi các tệp mà Lime3DS sử dụng để tải trò chơi</string>
+    <string name="theme_and_color_description">Chỉnh sửa giao diện của ứng dụng</string>
+    <string name="install_cia_title">Cài Đặt CIA</string>
+
+    <!-- GPU driver installation -->
+    <string name="select_gpu_driver">Chọn Driver GPU</string>
+    <string name="select_gpu_driver_title">Bạn có muốn thay thế driver GPU hiện tại của mình không?</string>
+    <string name="select_gpu_driver_install">Cài Đặt</string>
+    <string name="select_gpu_driver_default">Mặc Định</string>
+    <string name="select_gpu_driver_install_success">Đã cài đặt %s</string>
+    <string name="select_gpu_driver_use_default">Đang sử dụng driver GPU mặc định</string>
+    <string name="select_gpu_driver_error">Driver không hợp lệ được chọn, đang sử dụng mặc định của hệ thống!</string>
+    <string name="system_gpu_driver">Driver GPU Hệ Thống</string>
+    <string name="installing_driver">Đang cài đặt driver…</string>
+
+    <!-- About screen strings -->
+    <string name="copied_to_clipboard">Đã sao chép vào clipboard</string>
+    <string name="lime3ds_description">Một trình giả lập 3DS mã nguồn mở dựa trên Citra, được DucLQ điều chỉnh lại để chỉ sử dụng cho thiết bị Anbernic RG Cube</string>
+    <string name="contributors">Đóng góp</string>
+    <string name="contributors_description">Những người đóng góp đã làm cho Lime3DS trở thành hiện thực</string>
+    <string name="contributors_link">https://github.com/Lime3DS/Lime3DS/graphs/contributors</string>
+    <string name="licenses_description">Các dự án mà Lime3DS sử dụng cho Android</string>
+    <string name="build">Phiên Bản</string>
+    <string name="licenses">Giấy Phép</string>
+    <string name="support_link">https://discord.gg/4ZjMpAp3M6</string>
+    <string name="website_link">https://lime3ds.github.io/</string>
+    <string name="github_link">https://github.com/Lime3DS</string>
+
+    <!-- Setup strings -->
+    <string name="welcome">Chào Mừng!</string>
+    <string name="welcome_description">Tìm hiểu cách thiết lập &lt;b>Lime3DS&lt;/b> và bắt đầu mô phỏng.</string>
+    <string name="get_started">Bắt Đầu</string>
+    <string name="step_complete">Hoàn Thành!</string>
+    <string name="games">Trò Chơi</string>
+    <string name="games_description">Chọn thư mục &lt;b>Trò Chơi&lt;/b> của bạn bằng nút bên dưới.</string>
+    <string name="done">Xong</string>
+    <string name="done_description">Bạn đã sẵn sàng.\nChúc bạn chơi vui vẻ!</string>
+    <string name="text_continue">Tiếp Tục</string>
+    <string name="add_games">Thêm Trò Chơi</string>
+    <string name="notifications">Thông Báo</string>
+    <string name="notifications_description">Cấp quyền thông báo bằng nút bên dưới.</string>
+    <string name="give_permission">Cấp Quyền</string>
+    <string name="notification_warning">Bỏ qua quyền thông báo?</string>
+    <string name="notification_warning_description">Lime3DS sẽ không thể thông báo cho bạn về các thông tin quan trọng.</string>
+    <string name="camera_permission">Máy Ảnh</string>
+    <string name="camera_permission_description">Cấp quyền máy ảnh bên dưới để mô phỏng camera 3DS.</string>
+    <string name="microphone_permission">Micro</string>
+    <string name="microphone_permission_description">Cấp quyền micro bên dưới để mô phỏng micro 3DS.</string>
+    <string name="permission_denied">Quyền bị từ chối</string>
+    <string name="add_games_warning">Bỏ qua chọn thư mục trò chơi?</string>
+    <string name="add_games_warning_description">Trò chơi sẽ không được hiển thị trong danh sách Trò Chơi nếu không chọn thư mục.</string>
+    <string name="add_games_warning_help">https://web.archive.org/web/20240304210021/https://citra-emu.org/wiki/dumping-game-cartridges/</string>
+    <string name="warning_help">Trợ giúp</string>
+    <string name="warning_skip">Bỏ qua</string>
+    <string name="warning_cancel">Huỷ</string>
+    <string name="select_lime3ds_user_folder">Chọn Thư Mục Người Dùng</string>
+    <string name="select_lime3ds_user_folder_description"><![CDATA[Chọn thư mục <a href="https://web.archive.org/web/20240304193549/https://github.com/citra-emu/citra/wiki/Citra-Android-user-data-and-storage">dữ liệu người dùng</a> của bạn bằng nút bên dưới.]]></string>
+    <string name="select">Chọn</string>
+    <string name="cannot_skip">Bạn không thể bỏ qua bước này</string>
+    <string name="cannot_skip_directory_description">Bước này là cần thiết để Lime3DS hoạt động. Vui lòng chọn một thư mục sau đó bạn có thể tiếp tục.</string>
+    <string name="cannot_skip_directory_help">https://web.archive.org/web/20240304193549/https://github.com/citra-emu/citra/wiki/Citra-Android-user-data-and-storage</string>
+    <string name="set_up_theme_settings">Cài Đặt Giao Diện</string>
+    <string name="setup_theme_settings_description">Cấu hình tùy chọn giao diện của bạn cho Lime3DS.</string>
+    <string name="setup_set_theme">Cài Đặt Giao Diện</string>
+
+    <!-- Search Strings -->
+    <string name="search_and_filter_games">Tìm kiếm và lọc trò chơi</string>
+    <string name="home_search_games">Tìm kiếm trò chơi</string>
+    <string name="search_recently_played">Mới chơi gần đây</string>
+    <string name="search_recently_added">Mới thêm gần đây</string>
+    <string name="search_installed">Đã cài đặt</string>
+
+    <!-- Input related strings -->
+    <string name="controller_circlepad">Cần tròn</string>
+    <string name="controller_c">C-Stick</string>
+    <string name="controller_hotkeys">Phím nóng</string>
+    <string name="controller_triggers">Nút kích hoạt</string>
+    <string name="controller_trigger">Nút kích hoạt</string>
+    <string name="controller_dpad">D-Pad</string>
+    <string name="controller_dpad_axis">D-Pad (Trục)</string>
+    <string name="controller_dpad_axis_description">Một số bộ điều khiển không thể ánh xạ D-pad thành trục. Trong trường hợp đó, hãy dùng phần D-Pad (nút).</string>
+    <string name="controller_dpad_button">D-Pad (Nút)</string>
+    <string name="controller_dpad_button_description">Chỉ ánh xạ D-pad vào đây nếu bạn gặp vấn đề với việc gán nút D-Pad (Trục).</string>
+    <string name="controller_axis_vertical">Trục Lên/Xuống</string>
+    <string name="controller_axis_horizontal">Trục Trái/Phải</string>
+    <string name="direction_up">Lên</string>
+    <string name="direction_down">Xuống</string>
+    <string name="direction_left">Trái</string>
+    <string name="direction_right">Phải</string>
+    <string name="input_dialog_title">Gán %1$s %2$s</string>
+    <string name="input_dialog_description">Nhấn hoặc di chuyển một đầu vào.</string>
+    <string name="input_binding">Ràng buộc đầu vào</string>
+    <string name="input_binding_description">Nhấn hoặc di chuyển đầu vào để gán vào %1$s.</string>
+    <string name="input_binding_description_vertical_axis">Di chuyển cần điều khiển lên hoặc xuống.</string>
+    <string name="input_binding_description_horizontal_axis">Di chuyển cần điều khiển trái hoặc phải.</string>
+    <string name="button_a" translatable="false">A</string>
+    <string name="button_b" translatable="false">B</string>
+    <string name="button_select" translatable="false">CHỌN</string>
+    <string name="button_start" translatable="false">BẮT ĐẦU</string>
+    <string name="button_home">TRANG CHỦ</string>
+    <string name="button_swap">Đổi màn hình</string>
+    <string name="button_x" translatable="false">X</string>
+    <string name="button_y" translatable="false">Y</string>
+    <string name="button_l" translatable="false">L</string>
+    <string name="button_r" translatable="false">R</string>
+    <string name="button_zl" translatable="false">ZL</string>
+    <string name="button_zr" translatable="false">ZR</string>
+    <string name="input_message_analog_only">Điều khiển này phải được gán cho cần điều khiển analog hoặc trục D-Pad!</string>
+    <string name="input_message_button_only">Điều khiển này phải được gán cho nút trên gamepad!</string>
+
+    <!-- System files strings -->
+    <string name="system_files">Tệp hệ thống</string>
+    <string name="system_files_description">Tải tệp hệ thống để có tệp Mii, mở menu TRANG CHỦ và hơn thế nữa</string>
+    <string name="download_system_files">Tải tệp hệ thống</string>
+    <string name="boot_home_menu">Khởi động menu TRANG CHỦ</string>
+    <string name="system_type">Loại hệ thống</string>
+    <string name="download">Tải về</string>
+    <string name="start">Bắt đầu</string>
+    <string name="keys_missing">Lime3DS thiếu khóa để tải tệp hệ thống.</string>
+    <string name="how_to_get_keys"><![CDATA[<a href="https://web.archive.org/web/20240304203412/https://citra-emu.org/wiki/aes-keys/">Làm thế nào để có khóa?</a>]]></string>
+    <string name="show_home_apps">Hiển thị ứng dụng menu TRANG CHỦ trong danh sách trò chơi</string>
+    <string name="run_system_setup">Chạy cài đặt hệ thống khi khởi động menu TRANG CHỦ</string>
+    <string name="system_type_minimal">Tối giản</string>
+    <string name="system_type_old_3ds">Old 3DS</string>
+    <string name="system_type_new_3ds">New 3DS</string>
+    <string name="downloading_files">Đang tải tệp…</string>
+    <string name="downloading_files_description">Vui lòng không đóng ứng dụng.</string>
+    <string name="download_failed">Tải về thất bại</string>
+    <string name="download_failed_description">Vui lòng đảm bảo bạn đang kết nối internet và thử lại.</string>
+    <string name="download_success">Tải về hoàn tất!</string>
+    <string name="download_cancelled">Đã hủy tải về</string>
+    <string name="download_cancelled_description">Vui lòng khởi động lại tải về để tránh vấn đề khi có tệp hệ thống không hoàn chỉnh.</string>
+    <string name="cancelling">Đang hủy…</string>
+    <string name="home_menu">Menu TRANG CHỦ</string>
+    <string name="home_menu_warning">Cảnh báo tệp hệ thống</string>
+    <string name="home_menu_warning_description">Do cách truy cập chậm của Android vào tệp của Lime3DS, tải về nhiều phiên bản tệp hệ thống có thể làm chậm tốc độ tải trò chơi, lưu trạng thái và danh sách trò chơi. Chỉ tải các tệp cần thiết để tránh các vấn đề với tốc độ tải.</string>
+
+    <!-- Generic buttons (Shared with lots of stuff) -->
+    <string name="generic_buttons">Các nút</string>
+    <string name="button">Nút</string>
+
+    <!-- Core settings strings -->
+    <string name="cpu_jit">CPU JIT</string>
+    <string name="cpu_jit_description">Sử dụng trình biên dịch Just-in-Time (JIT) cho giả lập CPU. Khi bật, hiệu suất trò chơi sẽ được cải thiện đáng kể.</string>
+    <string name="init_clock">Đồng hồ</string>
+    <string name="init_clock_description">Đặt đồng hồ 3DS mô phỏng để sử dụng cho các trò chơi.</string>
+    <string name="cpu_clock_speed">Tốc độ đồng hồ CPU</string>
+
+    <!-- System settings strings -->
+    <string name="username">Tên người dùng</string>
+    <string name="new_3ds">Chế độ New 3DS</string>
+    <string name="lle_applets">Sử dụng ứng dụng LLE (nếu có)</string>
+    <string name="clock">Đồng hồ</string>
+    <string name="init_time">Thời gian bù</string>
+    <string name="init_time_description">Nếu đồng hồ được đặt là "Đồng hồ giả lập", giá trị này sẽ thay đổi ngày và giờ cố định để bắt đầu.</string>
+    <string name="emulated_region">Vùng</string>
+    <string name="emulated_language">Ngôn ngữ</string>
+    <string name="birthday">Sinh nhật</string>
+    <string name="birthday_month">Tháng</string>
+    <string name="birthday_day">Ngày</string>
+    <string name="country">Quốc gia</string>
+    <string name="play_coins">Xu trò chơi</string>
+    <string name="console_id">ID máy</string>
+    <string name="regenerate_console_id">Tạo lại ID máy</string>
+    <string name="regenerate_console_id_description">Việc này sẽ thay thế 3DS ảo hiện tại bằng một cái mới. 3DS ảo hiện tại của bạn sẽ không thể khôi phục lại. Điều này có thể gây ra các hiệu ứng không mong muốn trong trò chơi. Việc này có thể thất bại nếu bạn sử dụng lưu trữ cấu hình cũ. Tiếp tục?</string>
+    <string name="plugin_loader">Trình tải Plugin 3GX</string>
+    <string name="plugin_loader_description">Tải plugin 3GX từ thẻ SD mô phỏng nếu có sẵn.</string>
+    <string name="allow_plugin_loader">Cho phép trò chơi thay đổi trạng thái trình tải plugin</string>
+    <string name="allow_plugin_loader_description">Cho phép ứng dụng homebrew kích hoạt trình tải plugin ngay cả khi nó bị tắt.</string>
+
+    <!-- Camera settings strings -->
+    <string name="inner_camera">Camera trong</string>
+    <string name="outer_left_camera">Camera trái ngoài</string>
+    <string name="outer_right_camera">Camera phải ngoài</string>
+    <string name="image_source">Nguồn hình ảnh</string>
+    <string name="image_source_description">Thiết lập nguồn hình ảnh của camera ảo. Bạn có thể sử dụng tệp ảnh hoặc camera thiết bị nếu được hỗ trợ.</string>
+    <string name="camera_device">Camera</string>
+    <string name="camera_device_description">Nếu thiết lập "Nguồn hình ảnh" là "Camera thiết bị", tùy chọn này sẽ chọn camera vật lý sử dụng.</string>
+    <string name="camera_facing_front">Trước</string>
+    <string name="camera_facing_back">Sau</string>
+    <string name="camera_facing_external">Ngoài</string>
+    <string name="image_flip">Lật</string>
+
+    <!-- Graphics settings strings -->
+    <string name="renderer">Trình dựng đồ họa</string>
+    <string name="graphics_api">API Đồ họa</string>
+    <string name="spirv_shader_gen">Bật tạo shader SPIR-V</string>
+    <string name="spirv_shader_gen_description">Phát ra shader đoạn để giả lập PICA bằng SPIR-V thay vì GLSL</string>
+    <string name="async_shaders">Bật biên dịch shader không đồng bộ</string>
+    <string name="async_shaders_description">Biên dịch shader ở chế độ nền để giảm giật trong khi chơi game. Khi bật có thể xuất hiện một số lỗi hình ảnh tạm thời</string>
+    <string name="renderer_debug">Trình dựng đồ họa gỡ lỗi</string>
+    <string name="renderer_debug_description">Ghi lại thông tin gỡ lỗi đồ họa bổ sung. Khi bật, hiệu suất game sẽ giảm đáng kể.</string>
+    <string name="vsync">Bật V-Sync</string>
+    <string name="vsync_description">Đồng bộ tốc độ khung hình của game với tần số quét của thiết bị.</string>
+    <string name="linear_filtering">Lọc tuyến tính</string>
+    <string name="linear_filtering_description">Bật lọc tuyến tính, làm cho hình ảnh game mượt hơn.</string>
+    <string name="texture_filter_name">Bộ lọc texture</string>
+    <string name="texture_filter_description">Nâng cao chất lượng hình ảnh bằng cách áp dụng bộ lọc cho các texture. Các bộ lọc hỗ trợ gồm Anime4K Ultrafast, Bicubic, ScaleForce, xBRZ freescale và MMPX.</string>
+    <string name="hw_shaders">Bật shader phần cứng</string>
+    <string name="hw_shaders_description">Sử dụng phần cứng để giả lập shader 3DS. Khi bật, hiệu suất game sẽ được cải thiện đáng kể.</string>
+    <string name="shaders_accurate_mul">Phép nhân chính xác</string>
+    <string name="shaders_accurate_mul_description">Sử dụng phép nhân chính xác hơn trong shader phần cứng, có thể khắc phục một số lỗi đồ họa. Khi bật, hiệu suất sẽ giảm.</string>
+    <string name="asynchronous_gpu">Bật giả lập GPU không đồng bộ</string>
+    <string name="asynchronous_gpu_description">Sử dụng luồng riêng để giả lập GPU không đồng bộ. Khi bật, hiệu suất sẽ được cải thiện.</string>
+    <string name="frame_limit_enable">Giới hạn tốc độ</string>
+    <string name="frame_limit_enable_description">Khi bật, tốc độ giả lập sẽ bị giới hạn ở tỷ lệ phần trăm đã định so với tốc độ bình thường.</string>
+    <string name="frame_limit_slider">Phần trăm giới hạn tốc độ</string>
+    <string name="frame_limit_slider_description">Xác định phần trăm để giới hạn tốc độ giả lập. Mặc định là 100%, giới hạn tốc độ ở tốc độ bình thường. Các giá trị cao hoặc thấp hơn sẽ tăng hoặc giảm giới hạn tốc độ.</string>
+    <string name="internal_resolution">Độ phân giải nội bộ</string>
+    <string name="internal_resolution_description">Xác định độ phân giải khi dựng hình. Độ phân giải cao sẽ cải thiện đáng kể chất lượng hình ảnh nhưng cũng ảnh hưởng nặng đến hiệu suất và có thể gây lỗi ở một số game.</string>
+    <string name="internal_resolution_setting_1x">Gốc (400x240)</string>
+    <string name="internal_resolution_setting_2x">2x Gốc (800x480)</string>
+    <string name="internal_resolution_setting_3x">3x Gốc (1200x720)</string>
+    <string name="internal_resolution_setting_4x">4x Gốc (1600x960)</string>
+    <string name="internal_resolution_setting_5x">5x Gốc (2000x1200)</string>
+    <string name="internal_resolution_setting_6x">6x Gốc (2400x1440)</string>
+    <string name="internal_resolution_setting_7x">7x Gốc (2800x1680)</string>
+    <string name="internal_resolution_setting_8x">8x Gốc (3200x1920)</string>
+    <string name="internal_resolution_setting_9x">9x Gốc (3600x2160)</string>
+    <string name="internal_resolution_setting_10x">10x Gốc (4000x2400)</string>
+    <string name="performance_warning">Tắt cài đặt này sẽ làm giảm đáng kể hiệu suất giả lập! Để có trải nghiệm tốt nhất, khuyến nghị nên bật cài đặt này.</string>
+    <string name="debug_warning">Cảnh báo: Thay đổi các cài đặt này sẽ làm chậm giả lập</string>
+    <string name="stereoscopy">Lập thể học</string>
+    <string name="render3d">Chế độ 3D lập thể</string>
+    <string name="factor3d">Độ sâu</string>
+    <string name="factor3d_description">Xác định giá trị của thanh trượt 3D. Giá trị nên cao hơn 0% khi bật chế độ 3D lập thể.</string>
+    <string name="cardboard_vr">Cardboard VR</string>
+    <string name="cardboard_screen_size">Kích thước màn hình Cardboard</string>
+    <string name="cardboard_screen_size_description">Tỉ lệ màn hình theo phần trăm kích thước gốc.</string>
+    <string name="cardboard_x_shift">Dịch ngang</string>
+    <string name="cardboard_x_shift_description">Xác định phần trăm khoảng trống để dịch màn hình theo chiều ngang. Giá trị dương sẽ đưa hai mắt về phía giữa, giá trị âm sẽ dịch ra xa.</string>
+    <string name="cardboard_y_shift">Dịch dọc</string>
+    <string name="cardboard_y_shift_description">Xác định phần trăm khoảng trống để dịch màn hình theo chiều dọc. Giá trị dương dịch xuống dưới, giá trị âm dịch lên trên.</string>
+    <string name="use_shader_jit">Shader JIT</string>
+    <string name="use_disk_shader_cache">Bộ nhớ đệm shader trên ổ đĩa</string>
+    <string name="use_disk_shader_cache_description">Giảm giật bằng cách lưu và tải shader được tạo vào ổ đĩa. Không thể sử dụng nếu không bật Shader phần cứng.</string>
+    <string name="adreno_gpu_boost">Tăng tốc GPU Adreno (Thử nghiệm)</string>
+    <string name="adreno_gpu_boost_description">Tăng throughput đồ họa trên thiết bị hỗ trợ, cải thiện hiệu suất. Có thể tăng mức tiêu thụ năng lượng và nhiệt độ. Có thể gây ra sự cố ổn định trên một số thiết bị.</string>
+    <string name="utility">Tiện ích</string>
+    <string name="dump_textures">Xuất texture</string>
+    <string name="dump_textures_description">Các texture sẽ được xuất ra dump/textures/[Mã trò chơi]/.</string>
+    <string name="custom_textures">Texture tùy chỉnh</string>
+    <string name="custom_textures_description">Các texture sẽ được tải từ load/textures/[Mã trò chơi]/.</string>
+    <string name="preload_textures">Tải trước texture tùy chỉnh</string>
+    <string name="preload_textures_description">Tải tất cả các texture tùy chỉnh vào bộ nhớ. Tính năng này có thể sử dụng nhiều bộ nhớ.</string>
+    <string name="async_custom_loading">Tải không đồng bộ texture tùy chỉnh</string>
+    <string name="async_custom_loading_description">Tải texture tùy chỉnh không đồng bộ với các luồng nền để giảm giật khi tải.</string>
+
+    <!-- Audio settings strings -->
+    <string name="audio_volume">Âm lượng</string>
+    <string name="audio_stretch">Kéo dài âm thanh</string>
+    <string name="audio_stretch_description">Kéo dài âm thanh để giảm giật. Khi bật sẽ tăng độ trễ âm thanh và giảm nhẹ hiệu suất.</string>
+    <string name="realtime_audio">Bật âm thanh thời gian thực</string>
+    <string name="realtime_audio_description">Điều chỉnh tốc độ phát âm thanh để phù hợp với giảm tốc độ khung hình. Điều này giúp âm thanh phát đúng tốc độ ngay cả khi tốc độ khung hình thấp, nhưng có thể gây mất đồng bộ âm thanh.</string>
+    <string name="audio_input_type">Thiết bị đầu vào âm thanh</string>
+    <string name="sound_output_mode">Chế độ xuất âm thanh</string>
+
+    <!-- Layout settings strings -->
+    <string name="layout_screen_orientation">Hướng màn hình</string>
+    <string name="layout_screen_orientation_auto_sensor">Tự động</string>
+    <string name="layout_screen_orientation_landscape">Ngang</string>
+    <string name="layout_screen_orientation_landscape_reverse">Ngang ngược</string>
+    <string name="layout_screen_orientation_portrait">Dọc</string>
+    <string name="layout_screen_orientation_portrait_reverse">Dọc ngược</string>
+
+    <!-- Miscellaneous -->
+    <string name="clear">Xóa</string>
+    <string name="slider_default">Mặc định</string>
+    <string name="ini_saved">Cài đặt đã lưu</string>
+    <string name="gameid_saved">Đã lưu cài đặt cho %1$s</string>
+    <string name="error_saving">Lỗi lưu %1$s.ini: %2$s</string>
+    <string name="loading">Đang tải…</string>
+    <string name="next">Tiếp theo</string>
+    <string name="back">Quay lại</string>
+    <string name="learn_more">Tìm hiểu thêm</string>
+    <string name="close">Đóng</string>
+    <string name="reset_to_default">Đặt lại về mặc định</string>
+    <string name="redump_games"><![CDATA[Vui lòng làm theo hướng dẫn để tái trích xuất <a href="https://web.archive.org/web/20240304210021/https://citra-emu.org/wiki/dumping-game-cartridges/">băng trò chơi</a> hoặc <a href="https://web.archive.org/web/20240304210011/https://citra-emu.org/wiki/dumping-installed-titles/">tựa game đã cài đặt</a>.]]></string>
+    <string name="option_default">Mặc định</string>
+    <string name="none">Không</string>
+    <string name="auto">Tự động</string>
+    <string name="off">Tắt</string>
+    <string name="install">Cài đặt</string>
+    <string name="delete">Xóa</string>
+    <string name="reset_all_settings">Đặt lại tất cả cài đặt?</string>
+    <string name="reset_all_settings_description">Tất cả cài đặt nâng cao sẽ được đặt lại về cấu hình mặc định. Hành động này không thể hoàn tác.</string>
+    <string name="settings_reset">Cài đặt đã đặt lại</string>
+    <string name="select_rtc_date">Chọn ngày RTC</string>
+    <string name="select_rtc_time">Chọn giờ RTC</string>
+    <string name="reset_setting_confirmation">Bạn có muốn đặt lại cài đặt này về giá trị mặc định không?</string>
+    <string name="setting_not_editable">Bạn không thể chỉnh sửa bây giờ</string>
+    <string name="setting_not_editable_description">Không thể thay đổi tùy chọn này khi đang chạy trò chơi.</string>
+    <string name="auto_select">Tự chọn</string>
+
+    <!-- Add Directory Screen-->
+    <string name="select_game_folder">Chọn thư mục trò chơi</string>
+
+    <!-- Game Properties -->
+    <string name="properties">Thuộc tính</string>
+    <string name="properties_not_loaded">Không thể tải thuộc tính trò chơi.</string>
+
+    <!-- Preferences Screen -->
+    <string name="preferences_settings">Cài đặt</string>
+    <string name="preferences_general">Chung</string>
+    <string name="preferences_system">Hệ thống</string>
+    <string name="preferences_camera">Máy ảnh</string>
+    <string name="preferences_controls">Bàn điều khiển</string>
+    <string name="preferences_graphics">Đồ họa</string>
+    <string name="preferences_audio">Âm thanh</string>
+    <string name="preferences_debug">Gỡ lỗi</string>
+    <string name="preferences_theme">Chủ đề và Màu sắc</string>
+    <string name="preferences_layout">Bố cục</string>
+
+    <!-- ROM loading errors -->
+    <string name="loader_error_encrypted">ROM của bạn đã được mã hóa</string>
+    <string name="loader_error_invalid_format">Định dạng ROM không hợp lệ</string>
+    <string name="loader_error_file_not_found">Tệp ROM không tồn tại</string>
+    <string name="no_game_present">Không có trò chơi có thể khởi động!</string>
+
+    <!-- Emulation Menu -->
+    <string name="emulation_menu_help">Nhấn Quay lại để hiện menu.</string>
+    <string name="emulation_save_state">Lưu trạng thái</string>
+    <string name="emulation_load_state">Tải trạng thái</string>
+    <string name="emulation_empty_state_slot">Khe %1$d</string>
+    <string name="emulation_occupied_state_slot">Khe %1$d - %2$tF %2$tR</string>
+    <string name="emulation_show_fps">Hiển thị FPS</string>
+    <string name="emulation_haptic_feedback">Phản hồi xúc giác</string>
+    <string name="emulation_overlay_options">Tùy chọn lớp phủ</string>
+    <string name="emulation_configure_controls">Cấu hình điều khiển</string>
+    <string name="emulation_edit_layout">Chỉnh sửa bố cục</string>
+    <string name="emulation_done">Xong</string>
+    <string name="emulation_toggle_controls">Chuyển đổi điều khiển</string>
+    <string name="emulation_control_scale">Điều chỉnh tỷ lệ</string>
+    <string name="emulation_control_scale_global">Tỷ lệ toàn cầu</string>
+    <string name="emulation_control_scale_reset_all">Đặt lại tất cả</string>
+    <string name="emulation_control_opacity">Điều chỉnh độ mờ</string>
+    <string name="emulation_control_joystick_rel_center">Trung tâm cần gạt tương đối</string>
+    <string name="emulation_control_dpad_slide_enable">Trượt D-Pad</string>
+    <string name="emulation_open_settings">Mở Cài đặt</string>
+    <string name="emulation_open_cheats">Mở Cheats</string>
+    <string name="emulation_switch_screen_layout">Bố cục màn hình ngang</string>
+    <string name="emulation_switch_portrait_layout">Bố cục màn hình dọc</string>
+    <string name="emulation_screen_layout_largescreen">Màn hình lớn</string>
+    <string name="emulation_screen_layout_portrait">Chân dung</string>
+    <string name="emulation_screen_layout_single">Màn hình đơn</string>
+    <string name="emulation_screen_layout_sidebyside">Màn hình cạnh nhau</string>
+    <string name="emulation_screen_layout_hybrid">Màn hình lai</string>
+    <string name="emulation_screen_layout_original">Ban đầu</string>
+    <string name="emulation_portrait_layout_top_full">Mặc định</string>
+    <string name="emulation_screen_layout_custom">Bố cục tùy chỉnh</string>
+    <string name="emulation_small_screen_position">Vị trí màn hình nhỏ</string>
+    <string name="small_screen_position_description">Màn hình nhỏ nên xuất hiện ở đâu so với màn hình lớn trong bố cục Màn hình lớn?</string>
+    <string name="small_screen_position_top_right">Phía trên bên phải</string>
+    <string name="small_screen_position_middle_right">Giữa bên phải</string>
+    <string name="small_screen_position_bottom_right">Phía dưới bên phải (Mặc định)</string>
+    <string name="small_screen_position_top_left">Phía trên bên trái</string>
+    <string name="small_screen_position_middle_left">Giữa bên trái</string>
+    <string name="small_screen_position_bottom_left">Phía dưới bên trái</string>
+    <string name="small_screen_position_above">Phía trên</string>
+    <string name="small_screen_position_below">Phía dưới</string>
+    <string name="large_screen_proportion">Tỷ lệ màn hình lớn</string>
+    <string name="large_screen_proportion_description">Màn hình lớn lớn hơn bao nhiêu lần so với màn hình nhỏ trong bố cục Màn hình lớn?</string>
+    <string name="emulation_adjust_custom_layout">Điều chỉnh bố cục tùy chỉnh trong Cài đặt</string>
+    <string name="emulation_landscape_custom_layout">Bố cục tùy chỉnh nằm ngang</string>
+    <string name="emulation_portrait_custom_layout">Bố cục tùy chỉnh dọc</string>
+    <string name="emulation_top_screen">Màn hình trên</string>
+    <string name="emulation_bottom_screen">Màn hình dưới</string>
+    <string name="emulation_custom_layout_x">Vị trí X</string>
+    <string name="emulation_custom_layout_y">Vị trí Y</string>
+    <string name="emulation_custom_layout_width">Chiều rộng</string>
+    <string name="emulation_custom_layout_height">Chiều cao</string>
+    <string name="emulation_cycle_landscape_layouts">Xoay bố cục</string>
+    <string name="emulation_swap_screens">Hoán đổi màn hình</string>
+    <string name="emulation_touch_overlay_reset">Đặt lại lớp phủ cảm ứng</string>
+    <string name="emulation_show_overlay">Hiển thị lớp phủ</string>
+    <string name="emulation_close_game">Đóng trò chơi</string>
+    <string name="emulation_toggle_pause">Chuyển đổi tạm dừng</string>
+    <string name="emulation_close_game_message">Bạn có chắc chắn muốn đóng trò chơi hiện tại không?</string>
+    <string name="menu_emulation_amiibo">Amiibo</string>
+    <string name="menu_emulation_amiibo_load">Tải</string>
+    <string name="menu_emulation_amiibo_remove">Gỡ bỏ</string>
+    <string name="select_amiibo">Chọn Tệp Amiibo</string>
+    <string name="amiibo_load_error">Lỗi tải Amiibo</string>
+    <string name="amiibo_load_error_message">Khi tải tệp Amiibo chỉ định, đã xảy ra lỗi. Vui lòng kiểm tra tệp cho đúng.</string>
+    <string name="pause_emulation">Tạm dừng Giả lập</string>
+    <string name="resume_emulation">Tiếp tục Giả lập</string>
+    <string name="lock_drawer">Khóa ngăn kéo</string>
+    <string name="unlock_drawer">Mở khóa ngăn kéo</string>
+
+    <string name="write_permission_needed">Bạn cần cho phép quyền ghi vào bộ nhớ ngoài để trình giả lập hoạt động</string>
+    <string name="load_settings">Đang tải cài đặt…</string>
+
+    <string name="external_storage_not_mounted">Bộ nhớ ngoài cần phải sẵn sàng để sử dụng Lime3DS</string>
+
+    <string name="select_dir">Chọn thư mục này</string>
+    <string name="empty_gamelist">Không tìm thấy file nào hoặc chưa chọn thư mục trò chơi nào.</string>
+
+    <string name="do_not_show_this_again">Không hiển thị lại</string>
+    <string name="searching_directory">Đang tìm kiếm trong thư mục: %s</string>
+    <string name="move_data">Di chuyển dữ liệu</string>
+    <string name="moving_data">Đang di chuyển dữ liệu…</string>
+    <string name="copy_file_name">Sao chép tệp: %s</string>
+    <string name="copy_complete">Sao chép hoàn tất</string>
+    <string name="savestates">Trạng thái lưu</string>
+    <string name="savestate_warning_message">Cảnh báo: Trạng thái lưu KHÔNG thay thế cho lưu trong trò chơi và không được đảm bảo độ tin cậy.\n\nSử dụng có rủi ro!</string>
+
+    <!-- Software Keyboard -->
+    <string name="software_keyboard">Bàn phím ảo</string>
+    <string name="i_forgot">Tôi quên rồi</string>
+    <string name="fixed_length_required">Độ dài văn bản không đúng (phải là %d ký tự)</string>
+    <string name="max_length_exceeded">Văn bản quá dài (tối đa %d ký tự)</string>
+    <string name="blank_input_not_allowed">Không được phép để trống</string>
+    <string name="empty_input_not_allowed">Không được để trống</string>
+    <string name="invalid_input">Nhập liệu không hợp lệ</string>
+
+    <!-- Mii Selector -->
+    <string name="mii_selector">Trình chọn Mii</string>
+    <string name="standard_mii">Mii tiêu chuẩn</string>
+
+    <!-- Camera -->
+    <string name="camera_select_image">Chọn hình ảnh</string>
+    <string name="camera">Camera</string>
+    <string name="camera_permission_needed">Lime3DS cần truy cập vào camera của bạn để mô phỏng camera của 3DS.\n\nNgoài ra, bạn cũng có thể đặt "Nguồn hình ảnh" thành "Hình ảnh tĩnh" trong cài đặt Camera.</string>
+
+    <!-- Microphone -->
+    <string name="microphone">Micro</string>
+    <string name="microphone_permission_needed">Lime3DS cần truy cập vào micro của bạn để mô phỏng micro của 3DS.\n\nNgoài ra, bạn cũng có thể thay đổi "Thiết bị đầu vào âm thanh" trong cài đặt Âm thanh.</string>
+
+    <!-- Core Errors -->
+    <string name="abort_button">Hủy bỏ</string>
+    <string name="continue_button">Tiếp tục</string>
+    <string name="system_archive_not_found">Không tìm thấy hệ thống lưu trữ</string>
+    <string name="system_archive_not_found_message">%s đang thiếu. Vui lòng tạo bản sao lưu hệ thống của bạn.\nViệc tiếp tục mô phỏng có thể dẫn đến sự cố và lỗi.</string>
+    <string name="cia_file_not_found">Cài đặt thất bại. Không tìm thấy file CIA.</string>
+    <string name="system_archive_general">Một hệ thống lưu trữ</string>
+    <string name="save_load_error">Lỗi Lưu/ Tải</string>
+    <string name="fatal_error">Lỗi Nghiêm Trọng</string>
+    <string name="fatal_error_message">Đã xảy ra lỗi nghiêm trọng. Vui lòng kiểm tra nhật ký để biết chi tiết.\nViệc tiếp tục mô phỏng có thể dẫn đến sự cố và lỗi.</string>
+
+    <!-- Disk Shader Cache -->
+    <string name="preparing_shaders">Chuẩn bị Shaders</string>
+    <string name="building_shaders">Xây dựng Shaders</string>
+
+    <!-- About Game Dialog -->
+    <string name="play">Chơi</string>
+    <string name="shortcut">Phím tắt</string>
+
+    <!-- Cheats -->
+    <string name="cheats">Ghi Cheat</string>
+    <string name="cheats_add">Thêm Cheat</string>
+    <string name="cheats_name">Tên</string>
+    <string name="cheats_notes">Ghi chú</string>
+    <string name="cheats_code">Mã</string>
+    <string name="cheats_edit">Chỉnh sửa</string>
+    <string name="cheats_delete">Xóa</string>
+    <string name="cheats_delete_confirmation">Bạn có chắc chắn muốn xóa \"%1$s\" không?</string>
+    <string name="cheats_error_no_name">Tên không được để trống</string>
+    <string name="cheats_error_no_code_lines">Mã không được để trống</string>
+    <string name="cheats_error_on_line">Lỗi ở dòng %1$d</string>
+
+    <!-- CIA Install -->
+    <plurals name="cia_install_toast">
+        <item quantity="one">Đang cài đặt %d file. Xem thông báo để biết thêm chi tiết.</item>
+        <item quantity="other">Đang cài đặt %d files. Xem thông báo để biết thêm chi tiết.</item>
+    </plurals>
+    <string name="cia_install_notification_channel_name" translatable="false">Cài Đặt CIA Lime3DS</string>
+    <string name="cia_install_notification_channel_id" translatable="false">lime-cia</string>
+    <string name="cia_install_notification_channel_description">Thông báo Lime3DS trong quá trình cài đặt CIA</string>
+    <string name="cia_install_notification_title">Cài đặt CIA</string>
+    <string name="cia_install_notification_installing">Đang cài đặt %s (%d/%d)</string>
+    <string name="cia_install_notification_success_title">Cài đặt CIA thành công</string>
+    <string name="cia_install_notification_error_title">Cài đặt CIA thất bại</string>
+    <string name="cia_install_success">\"%s\" đã được cài đặt thành công</string>
+    <string name="cia_install_error_aborted">Việc cài đặt \"%s\" đã bị hủy bỏ.\nVui lòng xem nhật ký để biết thêm chi tiết</string>
+    <string name="cia_install_error_invalid">\"%s\" không phải là một CIA hợp lệ</string>
+    <string name="cia_install_error_encrypted">\"%s\" phải được giải mã trước khi sử dụng với Lime3DS.\nCần có một 3DS thực sự</string>
+    <string name="cia_install_error_unknown">Đã xảy ra lỗi không xác định khi cài đặt \"%s\".\nVui lòng xem nhật ký để biết thêm chi tiết</string>
+
+    <!-- Memory Sizes -->
+    <string name="memory_formatted">%1$s %2$s</string>
+    <string name="memory_byte">Byte</string>
+    <string name="memory_byte_shorthand">B</string>
+    <string name="memory_kilobyte">KB</string>
+    <string name="memory_megabyte">MB</string>
+    <string name="memory_gigabyte">GB</string>
+    <string name="memory_terabyte">TB</string>
+    <string name="memory_petabyte">PB</string>
+    <string name="memory_exabyte">EB</string>
+
+    <!-- System theme -->
+    <string name="change_theme_mode">Chế Độ Chủ Đề</string>
+    <string name="theme_mode_follow_system">Theo hệ thống</string>
+    <string name="theme_mode_light">Sáng</string>
+    <string name="theme_mode_dark">Tối</string>
+
+    <!-- Material You theme -->
+    <string name="material_you">Material You</string>
+    <string name="material_you_description">Sử dụng chủ đề màu sắc của hệ điều hành trong toàn bộ ứng dụng (Ghi đè cài đặt "Màu Chủ Đề" khi được bật)</string>
+
+    <!-- Static theme color -->
+    <string name="static_theme_color">Màu Chủ Đề</string>
+    <string name="static_theme_color_description">Thay đổi màu chủ đề của các menu trong ứng dụng</string>
+
+    <!-- Black backgrounds theme -->
+    <string name="use_black_backgrounds">Nền Đen</string>
+    <string name="use_black_backgrounds_description">Khi sử dụng chủ đề tối, áp dụng nền đen.</string>
+
+    <!-- Clock types -->
+    <string name="device_clock">Đồng Hồ Thiết Bị</string>
+    <string name="simulated_clock">Đồng Hồ Giả Lập</string>
+
+    <!-- Region names -->
+    <string name="system_region_jpn">Nhật Bản (JPN)</string>
+    <string name="system_region_usa">Mỹ (USA)</string>
+    <string name="system_region_eur">Châu Âu (EUR)</string>
+    <string name="system_region_aus">Úc (AUS)</string>
+    <string name="system_region_chn">Trung Quốc (CHN)</string>
+    <string name="system_region_kor">Hàn Quốc (KOR)</string>
+    <string name="system_region_twn">Đài Loan (TWN)</string>
+
+    <!-- Language names -->
+    <string name="language_japanese">Tiếng Nhật (日本語)</string>
+    <string name="language_english">Tiếng Anh</string>
+    <string name="language_french">Tiếng Pháp (Français)</string>
+    <string name="language_german">Tiếng Đức (Deutsch)</string>
+    <string name="language_italian">Tiếng Ý (Italiano)</string>
+    <string name="language_spanish">Tiếng Tây Ban Nha (Español)</string>
+    <string name="language_simplified_chinese">Tiếng Trung giản thể (简体中文)</string>
+    <string name="language_korean">Tiếng Hàn (한국어)</string>
+    <string name="language_dutch">Tiếng Hà Lan (Nederlands)</string>
+    <string name="language_portuguese">Tiếng Bồ Đào Nha (Português)</string>
+    <string name="language_russian">Tiếng Nga (Русский)</string>
+    <string name="language_traditional_chinese">Tiếng Trung truyền thống (正體中文)</string>
+
+    <!-- Camera image sources -->
+    <string name="blank">Trống</string>
+    <string name="still_image">Hình Ảnh Tĩnh</string>
+    <string name="device_camera">Camera Thiết Bị</string>
+
+    <!-- Camera device names -->
+    <string name="any_front_camera">Bất kỳ Camera Trước Nào</string>
+    <string name="any_back_camera">Bất kỳ Camera Sau Nào</string>
+
+    <!-- Camera flip names -->
+    <string name="horizontal">Ngang</string>
+    <string name="vertical">Dọc</string>
+    <string name="reverse">Đảo ngược</string>
+
+    <!-- Audio input types -->
+    <string name="static_noise">Tiếng Ồn Tĩnh</string>
+    <string name="real_cubeb">Thiết Bị Thực (cubeb)</string>
+    <string name="real_openal">Thiết Bị Thực (OpenAL)</string>
+
+    <!-- Render 3D modes -->
+    <string name="side_by_side">Bên Cạnh Nhau</string>
+    <string name="reverse_side_by_side">Đảo Ngược Bên Cạnh Nhau</string>
+    <string name="anaglyph">Anaglyph</string>
+    <string name="interlaced">Interlaced</string>
+    <string name="reverse_interlaced">Đảo Ngược Interlaced</string>
+
+    <!-- Graphics API names -->
+    <string name="opengles">OpenGLES</string>
+    <string name="vulkan">Vulkan</string>
+
+    <!-- Texture filter names -->
+    <string name="anime4k">Anime4K</string>
+    <string name="bicubic">Bicubic</string>
+    <string name="nearest_neighbor">Nearest Neighbor</string>
+    <string name="scaleforce">ScaleForce</string>
+    <string name="xbrz">xBRZ</string>
+    <string name="mmpx">MMPX</string>
+
+    <!-- Sound output modes -->
+    <string name="mono">Mono</string>
+    <string name="stereo">Stereo</string>
+    <string name="surround">Âm Thanh Vòm</string>
+
+    <!-- Countries -->
+    <string name="japan">Nhật Bản</string>
+    <string name="anguilla">Anguilla</string>
+    <string name="antigua_and_barbuda">Antigua và Barbuda</string>
+    <string name="argentina">Argentina</string>
+    <string name="aruba">Aruba</string>
+    <string name="bahamas">Bahamas</string>
+    <string name="barbados">Barbados</string>
+    <string name="belize">Belize</string>
+    <string name="bolivia">Bolivia</string>
+    <string name="brazil">Brazil</string>
+    <string name="british_virgin_islands">Quần đảo Virgin thuộc Anh</string>
+    <string name="canada">Canada</string>
+    <string name="cayman_islands">Quần đảo Cayman</string>
+    <string name="chile">Chile</string>
+    <string name="colombia">Colombia</string>
+    <string name="costa_rica">Costa Rica</string>
+    <string name="dominica">Dominica</string>
+    <string name="dominican_republic">Cộng hòa Dominica</string>
+    <string name="ecuador">Ecuador</string>
+    <string name="el_salvador">El Salvador</string>
+    <string name="french_guiana">Guiana thuộc Pháp</string>
+    <string name="grenada">Grenada</string>
+    <string name="guadeloupe">Guadeloupe</string>
+    <string name="guatemala">Guatemala</string>
+    <string name="guyana">Guyana</string>
+    <string name="haiti">Haiti</string>
+    <string name="honduras">Honduras</string>
+    <string name="jamaica">Jamaica</string>
+    <string name="matinique">Martinique</string>
+    <string name="mexico">Mexico</string>
+    <string name="monsterrat">Montserrat</string>
+    <string name="netherlands_antilles">Antilles thuộc Hà Lan</string>
+    <string name="nicaragua">Nicaragua</string>
+    <string name="panama">Panama</string>
+    <string name="paraguay">Paraguay</string>
+    <string name="peru">Peru</string>
+    <string name="saint_kittis_and_nevis">Saint Kitts và Nevis</string>
+    <string name="saint_lucia">Saint Lucia</string>
+    <string name="saint_vincent_and_the_grenadines">Saint Vincent và Grenadines</string>
+    <string name="suriname">Suriname</string>
+    <string name="trinidad_and_tobago">Trinidad và Tobago</string>
+    <string name="turks_and_caicos_islands">Quần đảo Turks và Caicos</string>
+    <string name="united_states">Hoa Kỳ</string>
+    <string name="uruguay">Uruguay</string>
+    <string name="us_virgin_islands">Quần đảo Virgin thuộc Mỹ</string>
+    <string name="venezuela">Venezuela</string>
+    <string name="albania">Albania</string>
+    <string name="australia">Úc</string>
+    <string name="austria">Áo</string>
+    <string name="belgium">Bỉ</string>
+    <string name="bosnia_and_herzegovnia">Bosna và Herzegovina</string>
+    <string name="botswana">Botswana</string>
+    <string name="bulgaria">Bulgarie</string>
+    <string name="croatia">Croatia</string>
+    <string name="cyprus">Cyprus</string>
+    <string name="czech_republic">Cộng hòa Séc</string>
+    <string name="denmark">Đan Mạch</string>
+    <string name="estonia">Estonia</string>
+    <string name="finland">Phần Lan</string>
+    <string name="france">Pháp</string>
+    <string name="germany">Đức</string>
+    <string name="greece">Hy Lạp</string>
+    <string name="hungary">Hungary</string>
+    <string name="iceland">Iceland</string>
+    <string name="ireland">Ireland</string>
+    <string name="italy">Ý</string>
+    <string name="latvia">Latvia</string>
+    <string name="lesotho">Lesotho</string>
+    <string name="liechtenstein">Liechtenstein</string>
+    <string name="lithuania">Litva</string>
+    <string name="luxembourg">Luxembourg</string>
+    <string name="macedonia">Macedonia</string>
+    <string name="malta">Malta</string>
+    <string name="montenegro">Montenegro</string>
+    <string name="mozambique">Mozambique</string>
+    <string name="namibia">Namibia</string>
+    <string name="netherlands">Hà Lan</string>
+    <string name="new_zealand">New Zealand</string>
+    <string name="norway">Na Uy</string>
+    <string name="poland">Ba Lan</string>
+    <string name="portugal">Bồ Đào Nha</string>
+    <string name="romania">Romania</string>
+    <string name="russia">Nga</string>
+    <string name="serbia">Serbia</string>
+    <string name="slovakia">Slovakia</string>
+    <string name="slovenia">Slovenia</string>
+    <string name="south_africa">Nam Phi</string>
+    <string name="spain">Tây Ban Nha</string>
+    <string name="swaziland">Eswatini</string>
+    <string name="sweden">Thụy Điển</string>
+    <string name="switzerland">Thụy Sĩ</string>
+    <string name="turkey">Thổ Nhĩ Kỳ</string>
+    <string name="united_kingdom">Vương Quốc Anh</string>
+    <string name="zambia">Zambia</string>
+    <string name="zimbabwe">Zimbabwe</string>
+    <string name="azerbaijan">Azerbaijan</string>
+    <string name="mauritania">Mauritania</string>
+    <string name="mali">Mali</string>
+    <string name="niger">Niger</string>
+    <string name="chad">Chad</string>
+    <string name="sudan">Sudan</string>
+    <string name="eritrea">Eritrea</string>
+    <string name="djibouti">Djibouti</string>
+    <string name="somalia">Somalia</string>
+    <string name="andorra">Andorra</string>
+    <string name="gibraltar">Gibraltar</string>
+    <string name="guernsey">Guernsey</string>
+    <string name="isle_of_man">Đảo Man</string>
+    <string name="jersey">Jersey</string>
+    <string name="monaco">Monaco</string>
+    <string name="taiwan">Đài Loan</string>
+    <string name="south_korea">Hàn Quốc</string>
+    <string name="hong_kong">Hồng Kông</string>
+    <string name="macau">Ma Cao</string>
+    <string name="indonesia">Indonesia</string>
+    <string name="singapore">Singapore</string>
+    <string name="thailand">Thái Lan</string>
+    <string name="philippines">Philippines</string>
+    <string name="malaysia">Malaysia</string>
+    <string name="china">Trung Quốc</string>
+    <string name="united_arab_emirates">Các Tiểu vương quốc Ả Rập Thống nhất</string>
+    <string name="india">Ấn Độ</string>
+    <string name="egypt">Ai Cập</string>
+    <string name="oman">Oman</string>
+    <string name="qatar">Qatar</string>
+    <string name="kuwait">Kuwait</string>
+    <string name="saudi_arabia">Ả Rập Saudi</string>
+    <string name="syria">Syria</string>
+    <string name="bahrain">Bahrain</string>
+    <string name="jordan">Jordan</string>
+    <string name="san_marino">San Marino</string>
+    <string name="vatican_city">Thành phố Vatican</string>
+    <string name="bermuda">Bermuda</string>
+
+    <!-- Months -->
+    <string name="january">Tháng Một</string>
+    <string name="february">Tháng Hai</string>
+    <string name="march">Tháng Ba</string>
+    <string name="april">Tháng Tư</string>
+    <string name="may">Tháng Năm</string>
+    <string name="june">Tháng Sáu</string>
+    <string name="july">Tháng Bảy</string>
+    <string name="august">Tháng Tám</string>
+    <string name="september">Tháng Chín</string>
+    <string name="october">Tháng Mười</string>
+    <string name="november">Tháng Mười Một</string>
+    <string name="december">Tháng Mười Hai</string>
+
+    <!-- Artic base -->
+    <string name="artic_server_comm_error">Không thể kết nối với máy chủ Artic Base. Mô phỏng sẽ dừng lại.</string>
+    <string name="artic_base">Căn cứ Artic</string>
+    <string name="artic_base_connect_description">Kết nối với một máy chơi game thực đang chạy máy chủ Artic Base</string>
+    <string name="artic_base_connect">Kết nối với Artic Base</string>
+    <string name="artic_base_enter_address">Nhập địa chỉ máy chủ Artic Base</string>
+    <string name="miscellaneous">Các vấn đề khác</string>
+    <string name="use_artic_base_controller">Sử dụng bộ điều khiển Artic khi kết nối với máy chủ Artic Base</string>
+    <string name="use_artic_base_controller_desc">Sử dụng các điều khiển do Artic Base Server cung cấp khi kết nối với nó thay vì thiết bị đầu vào đã cấu hình.</string>
+
+</resources>
