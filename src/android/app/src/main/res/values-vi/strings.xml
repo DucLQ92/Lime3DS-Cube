@@ -62,7 +62,7 @@
 
     <!-- Setup strings -->
     <string name="welcome">Chào Mừng!</string>
-    <string name="welcome_description">Tìm hiểu cách thiết lập &lt;b>Lime3DS&lt;/b> và bắt đầu mô phỏng.</string>
+    <string name="welcome_description">Tìm hiểu cách thiết lập &lt;b>Lime3DS Cube&lt;/b> và bắt đầu chơi.</string>
     <string name="get_started">Bắt Đầu</string>
     <string name="step_complete">Hoàn Thành!</string>
     <string name="games">Trò Chơi</string>
@@ -77,9 +77,9 @@
     <string name="notification_warning">Bỏ qua quyền thông báo?</string>
     <string name="notification_warning_description">Lime3DS sẽ không thể thông báo cho bạn về các thông tin quan trọng.</string>
     <string name="camera_permission">Máy Ảnh</string>
-    <string name="camera_permission_description">Cấp quyền máy ảnh bên dưới để mô phỏng camera 3DS.</string>
+    <string name="camera_permission_description">Cấp quyền truy cập máy ảnh bên dưới để mô phỏng camera 3DS.</string>
     <string name="microphone_permission">Micro</string>
-    <string name="microphone_permission_description">Cấp quyền micro bên dưới để mô phỏng micro 3DS.</string>
+    <string name="microphone_permission_description">Cấp quyền truy cập micro bên dưới để mô phỏng micro 3DS.</string>
     <string name="permission_denied">Quyền bị từ chối</string>
     <string name="add_games_warning">Bỏ qua chọn thư mục trò chơi?</string>
     <string name="add_games_warning_description">Trò chơi sẽ không được hiển thị trong danh sách Trò Chơi nếu không chọn thư mục.</string>
